@@ -17,9 +17,6 @@ def create_branch(input_layer):
     return dense_methy
 
 def get_model(dataset_dict, hparams_dict:dict):
-    """
-    TODO: need to add class weight in categorical crossentropy.
-    """
     input_branch_arr = []
     feature_input_arr = []
 
