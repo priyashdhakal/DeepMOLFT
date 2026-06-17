@@ -73,7 +73,26 @@ dropout 0.1–0.5 each.
 
 | Component | Version |
 |-----------|---------|
-| Python | 3.10 |
+| Python | 3.x |
 | TensorFlow / Keras | 2.15.0 |
 | CUDA | 11.6 (driver 510.108.03) |
 | GPU | NVIDIA TITAN Xp (12 GB) |
+| Key libraries | `tensorflow`, `scikit-learn`, `optuna`, `shap`, `numpy`, `pandas` |
+
+A fixed random seed (`123`) is set across NumPy, TensorFlow, and Keras for
+deterministic, exactly reproducible runs.
+
+Deep MOLFT is intentionally lightweight: a fully connected late-fusion backbone with
+compact modality-specific branches and aggressive upstream feature reduction. 
+
+| Metric | Value |
+|--------|-------|
+| Hardware | Single NVIDIA TITAN Xp (12 GB) |
+| Optimizer / batch size | Adam / 32 |
+| Max epochs (early stopping patience) | 500 (50) |
+| **Full training time (500 epochs)** | **≈ 19.26 s** |
+
+## Citation
+
+If you use this code, please cite the Deep MOLFT manuscript. (Citation to be added
+upon publication.)
