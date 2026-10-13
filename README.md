@@ -74,7 +74,7 @@ dropout 0.1–0.5 each.
 | Component | Version |
 |-----------|---------|
 | Python | 3.x |
-| TensorFlow / Keras | 2.15.0 |
+| TensorFlow / Keras | 2.12.0 |
 | CUDA | 11.6 (driver 510.108.03) |
 | GPU | NVIDIA TITAN Xp (12 GB) |
 | Key libraries | `tensorflow`, `scikit-learn`, `optuna`, `shap`, `numpy`, `pandas` |
